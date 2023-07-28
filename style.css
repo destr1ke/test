@@ -43,24 +43,14 @@ a {
 .app__download {
   margin-top: 24px;
   color: white;
-
+  font-family: "Gilroy";
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
   padding: 10px 40px;
   border-radius: 98px;
-  font-weight: 600;
-  background: radial-gradient(
-      374.13% 94.84% at -8.68% 33.33%,
-      #ff00b8 0%,
-      rgba(242, 47, 164, 0) 100%
-    ),
-    radial-gradient(
-      603.28% 115.05% at 105.39% 54.44%,
-      #8f00ff 0%,
-      rgba(215, 47, 242, 0) 100%
-    ),
-    #d72ff2;
-
+  background: linear-gradient(to right, #ff00b8 0%, #8f00ff 100%);
   box-shadow: 0px 0px 64px 0px rgba(215, 47, 242, 0.95);
-  text-transform: uppercase;
   cursor: pointer;
 }
 .app__platforms {
@@ -195,14 +185,8 @@ h2 {
   align-items: center;
   padding: 10px 30px;
   border-radius: 98px;
-  background: radial-gradient(
-      238.98% 144.24% at -8.68% 33.33%,
-      #30f 0%,
-      rgba(47, 55, 242, 0) 100%
-    ),
-    radial-gradient(603.28% 115.05% at 105.39% 54.44%, #2ca3db 0%, #2198d5 100%),
-    linear-gradient(0deg, #29a0da 0%, #29a0da 100%),
-    linear-gradient(126deg, #ff6445 0%, #fe4012 100%);
+  background: linear-gradient(to right, #30f 0%, #2198d5 100%);
+
   box-shadow: 0px 0px 7px 0px #2ca5f3;
 }
 .help__button span {
