@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("./fonts/Gilroy-Regular.woff");
+}
+
+* {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.main {
+  background: url("./images/background.jpg") no-repeat center/cover;
+  height: 100vh;
+}
+
+.app {
+  padding-top: 241px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Gilroy";
+}
+.app__logo {
+  width: 149px;
+  height: 149px;
+  display: flex;
+  justify-content: center;
+  background-color: #1e0041;
+  border-radius: 40px;
+}
+
+.app__description {
+  margin-top: 38px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  width: 223px;
+}
+
+.app__download {
+  margin-top: 24px;
+  color: white;
+
+  padding: 10px 40px;
+  border-radius: 98px;
+  font-weight: 600;
+  background: radial-gradient(
+      374.13% 94.84% at -8.68% 33.33%,
+      #ff00b8 0%,
+      rgba(242, 47, 164, 0) 100%
+    ),
+    radial-gradient(
+      603.28% 115.05% at 105.39% 54.44%,
+      #8f00ff 0%,
+      rgba(215, 47, 242, 0) 100%
+    ),
+    #d72ff2;
+
+  box-shadow: 0px 0px 64px 0px rgba(215, 47, 242, 0.95);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.app__platforms {
+  margin-top: 18px;
+  opacity: 0.1;
+}
+.app__platforms img:last-child {
+  margin-left: 20px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./images/background.jpg") no-repeat center/cover;
+  z-index: 2;
+}
+
+.modal {
+  padding-top: 127px;
+  backdrop-filter: blur(9px);
+  background: radial-gradient(
+    138.86% 63.66% at 50% 50%,
+    rgba(23, 23, 23, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  z-index: 3;
+  height: 100%;
+}
+.step {
+  display: none;
+  font-family: "Gilroy";
+  color: white;
+}
+
+.step__header,
+.step__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.step__content {
+  width: 236px;
+  margin: 0 auto;
+}
+.step__header p {
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+}
+.step__header p,
+.step__header svg {
+  margin-top: 13px;
+}
+
+.step.active {
+  display: block;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.progress-bar {
+  margin-top: 13px;
+  background-color: #3498db;
+  border-radius: 5px;
+  height: 4px;
+}
+.step__content img {
+  border-radius: 10px;
+  margin-top: 17px;
+  margin-bottom: 23px;
+  border: 0.65px solid #c0f;
+  width: 236px;
+  height: 294px;
+
+  box-shadow: 0px 0.6499999761581421px 0.5px 0px rgba(14, 0, 21, 0.7),
+    0px 1.2649999856948853px 1.6445000171661377px 0px #8300c1,
+    -0.06499999761581421px 0.12999999523162842px 0.06499999761581421px 0px rgba(
+        255,
+        255,
+        255,
+        0.5
+      ) inset;
+}
+
+.step__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#step1 .step__buttons {
+  justify-content: flex-end;
+}
+
+.btn {
+  display: inline-block;
+}
+.next-btn {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.prev-btn {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.help {
+  margin-top: 47px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.help__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  border-radius: 98px;
+  background: radial-gradient(
+      238.98% 144.24% at -8.68% 33.33%,
+      #30f 0%,
+      rgba(47, 55, 242, 0) 100%
+    ),
+    radial-gradient(603.28% 115.05% at 105.39% 54.44%, #2ca3db 0%, #2198d5 100%),
+    linear-gradient(0deg, #29a0da 0%, #29a0da 100%),
+    linear-gradient(126deg, #ff6445 0%, #fe4012 100%);
+  box-shadow: 0px 0px 7px 0px #2ca5f3;
+}
+.help__button span {
+  margin-left: 10px;
+  color: #fff;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.help p {
+  margin-top: 10px;
+  color: #fff;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
