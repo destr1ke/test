@@ -28,8 +28,13 @@ a {
   height: 149px;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #1e0041;
   border-radius: 40px;
+}
+.app__logo img {
+  width: 57px;
+  height: 68px;
 }
 
 .app__description {
@@ -52,7 +57,23 @@ a {
   background: linear-gradient(to right, #ff00b8 0%, #8f00ff 100%);
   box-shadow: 0px 0px 64px 0px rgba(215, 47, 242, 0.95);
   cursor: pointer;
+  animation: download-pulse 3s ease-in-out infinite;
 }
+@keyframes download-pulse {
+  0% {
+    box-shadow: 0px 0px 7px 0px #8f00ff;
+  }
+  50% {
+    box-shadow: 0px 0px 10px 5px #ff00b8;
+  }
+  100% {
+    box-shadow: 0px 0px 7px 0px #8f00ff;
+  }
+}
+.app__download span {
+  letter-spacing: 1px;
+}
+
 .app__platforms {
   margin-top: 18px;
   opacity: 0.1;
@@ -87,6 +108,7 @@ a {
   display: none;
   font-family: "Gilroy";
   color: white;
+  position: relative;
 }
 
 .step__header,
@@ -94,6 +116,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .step__content {
   width: 236px;
@@ -112,6 +135,52 @@ a {
 
 .step.active {
   display: block;
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#step1 .step__content::before {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  border: 1px solid #ff1313;
+  width: 59px;
+  height: 21px;
+  right: 21px;
+  bottom: 92px;
+  animation: pulse 2s linear infinite;
+}
+
+#step2 .step__content::before {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  border: 1px solid #ff1313;
+  width: 41px;
+  height: 21px;
+  right: 2px;
+  bottom: 184px;
+  animation: pulse 2s linear infinite;
+}
+#step3 .step__content::before {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  border: 1px solid #ff1313;
+  width: 59px;
+  height: 21px;
+  right: 24px;
+  bottom: 155px;
+  animation: pulse 2s linear infinite;
 }
 
 h2 {
@@ -180,15 +249,29 @@ h2 {
   align-items: center;
 }
 .help__button {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 30px;
   border-radius: 98px;
   background: linear-gradient(to right, #30f 0%, #2198d5 100%);
-
   box-shadow: 0px 0px 7px 0px #2ca5f3;
+  animation: help-pulse 3s ease-in-out infinite;
 }
+
+@keyframes help-pulse {
+  0% {
+    box-shadow: 0px 0px 7px 0px #2ca5f3;
+  }
+  50% {
+    box-shadow: 0px 0px 10px 5px #30f;
+  }
+  100% {
+    box-shadow: 0px 0px 7px 0px #2ca5f3;
+  }
+}
+
 .help__button span {
   margin-left: 10px;
   color: #fff;
