@@ -96,6 +96,7 @@ a {
 .modal {
   padding-top: 127px;
   backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
   background: radial-gradient(
     138.86% 63.66% at 50% 50%,
     rgba(23, 23, 23, 0) 0%,
@@ -186,7 +187,7 @@ a {
 h2 {
   margin-top: 0;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: bold;
 }
 
 .progress-bar {
@@ -277,7 +278,7 @@ h2 {
   color: #fff;
   font-family: "Gilroy";
   font-size: 18px;
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: 1.5px;
 }
 .help p {
