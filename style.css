@@ -28,7 +28,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Gilroy";
+  font-family: Gilroy;
 }
 .app__logo {
   width: 149px;
@@ -55,7 +55,7 @@ a {
 .app__download {
   margin-top: 24px;
   color: white;
-  font-family: "Gilroy";
+  font-family: Gilroy;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
@@ -114,7 +114,7 @@ a {
 }
 .step {
   display: none;
-  font-family: "Gilroy";
+  font-family: Gilroy;
   color: white;
   position: relative;
 }
@@ -194,7 +194,7 @@ a {
 h2 {
   margin-top: 0;
   font-size: 20px;
-  font-weight: "Gilroy-extra";
+  font-family: Gilroy-extra;
 }
 
 .progress-bar {
@@ -237,7 +237,7 @@ h2 {
 }
 .next-btn {
   color: #fff;
-  font-family: "Gilroy";
+  font-family: Gilroy;
   font-size: 20px;
   font-weight: 600;
   margin-right: 15px;
@@ -245,7 +245,7 @@ h2 {
 
 .prev-btn {
   color: #fff;
-  font-family: "Gilroy";
+  font-family: Gilroy;
   font-size: 20px;
   font-weight: 400;
   opacity: 0.5;
@@ -283,15 +283,15 @@ h2 {
 .help__button span {
   margin-left: 10px;
   color: #fff;
-  font-family: "Gilroy-semi";
+  font-family: Gilroy-semi;
   font-size: 18px;
-  font-weight: bold;
+
   letter-spacing: 1.5px;
 }
 .help p {
   margin-top: 10px;
   color: #fff;
-  font-family: "Gilroy";
+  font-family: Gilroy;
   font-size: 18px;
   font-weight: 400;
   text-align: center;
