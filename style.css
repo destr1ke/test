@@ -2,7 +2,14 @@
   font-family: "Gilroy";
   src: url("./fonts/Gilroy-Regular.woff");
 }
-
+@font-face {
+  font-family: "Gilroy-extra";
+  src: url("./fonts/Gilroy-ExtraBold.woff");
+}
+@font-face {
+  font-family: "Gilroy-semi";
+  src: url("./fonts/Gilroy-SemiBold.woff");
+}
 * {
   margin: 0;
 }
@@ -187,7 +194,7 @@ a {
 h2 {
   margin-top: 0;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: "Gilroy-extra";
 }
 
 .progress-bar {
@@ -230,7 +237,7 @@ h2 {
 }
 .next-btn {
   color: #fff;
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-size: 20px;
   font-weight: 600;
   margin-right: 15px;
@@ -238,7 +245,7 @@ h2 {
 
 .prev-btn {
   color: #fff;
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-size: 20px;
   font-weight: 400;
   opacity: 0.5;
@@ -276,7 +283,7 @@ h2 {
 .help__button span {
   margin-left: 10px;
   color: #fff;
-  font-family: "Gilroy";
+  font-family: "Gilroy-semi";
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 1.5px;
